@@ -16,13 +16,5 @@ class password_checker():
         # {9,} minimum of 9 characters (allowed characters)
         return r"^(?=.*[a-z])(?=.*[A-Z])(?=.*[\d])(?=.*[!@#$%^&*()-+])(?!.*(.).*\1)[a-zA-Z\d!@#$%^&*()-+]{9,}$"
 
-
-
     def is_valid_password(self, password):
         return self.password_checker.match(password) != None
-
-
-pc = password_checker()
-
-
-print(pc.is_valid_password("Daniel1@a"))
