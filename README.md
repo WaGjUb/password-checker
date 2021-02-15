@@ -71,17 +71,17 @@ This project runs on AWS as serverless using API Gateway as API and AWS Lambda.
 
 #### Quick run (all these command should to be runned in root directory of project (/password-checker/aws\_running//password\_verify\_app))
 - Install python dependences
-make init
+	- make init
 - run unit tests
-make unit-test
+	- make unit-test
 - run integration tests (works only if deploy the code in you own AWS and change the stack variable on Makefile)
-make integration-test
+	- make integration-test
 - run all tests
-make test
-- sam local start-api (default is http://localhost:3000/)
-start an local API (an emulator of api gateway)
-- sam deploy --guided
-To make the deploy on your AWS
+	- make test
+- start an local API (an emulator of api gateway)
+	- sam local start-api (default is http://localhost:3000/)
+- To make the deploy on your AWS
+	- sam deploy --guided
 
 #### Usage
 you may use postman, curl or whatever you want to send a post request to endpoint "verifypassword"
