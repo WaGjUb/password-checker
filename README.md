@@ -1,5 +1,6 @@
 # password-checker
 An password checker API using regex
+
 Author: WaGjUb (Daniel Costa Valerio)
 
 ## Structure
@@ -85,6 +86,7 @@ This project runs on AWS as serverless using API Gateway as API and AWS Lambda.
 
 #### Usage
 you may use postman, curl or whatever you want to send a post request to endpoint "verifypassword"
+
 e.g: curl --location --request POST 'http://localhost:8080/verifypassword' --header 'Content-Type: application/text' -d 'Daniel1@3'
 
 #### Code Explanation
