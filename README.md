@@ -44,6 +44,7 @@ Our Unit test is testing the password regex matches, providing the inputs and ch
 Our integration test is testing the integration between Flask api and password verifier code. This checks if server is up, if endpoint is returning and if the result os return matches with the password requirements
 
 #### Project Structure
+```
 local\_running
 ├── Makefile (File that support to run and install dependences os project)
 ├── requirements.txt (project python dependences)
@@ -58,6 +59,7 @@ local\_running
     └── unit (Dir with unit test)
         ├── __init__.py
         └── test_password.py (Unitary test of password code)
+```
 
 ### AWS Running
 This project runs on AWS as serverless using API Gateway as API and AWS Lambda.
