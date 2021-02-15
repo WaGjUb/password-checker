@@ -101,6 +101,7 @@ Our Unit test is testing the password regex matches, providing the inputs and ch
 Our integration test is testing the integration between API Gateway api and password verifier code. This checks if endpoint is returning and if the result os return matches with the password requirements (so If the apigateway and lambda are working together)
 
 ##### Project Structure
+```
 aws\_running
 └── password\_verify\_app
     ├── Makefile
@@ -125,3 +126,4 @@ aws\_running
         ├── app.py (Code to process API gateway request and uses validate password to return (Lambda!))
         ├── requirements.txt (project python dependences)
         └── validate_password.py (Code that verify the password)
+```
