@@ -16,15 +16,15 @@ This project runs on a local server using Flask.
 
 #### Quick run (all these command should to be runned in root directory (/password-checker/local\_running))
 - Install dependences
-make init
+	- make init
 - run unit tests
-make unit-test
+	- make unit-test
 - run integration tests
-make integration-test
+	- make integration-test
 - run all tests
-make test
+	- make test
 - run API
-make api -> it will start an api on localhost:8080 (can be modified in makefile)
+	- make api -> it will start an api on localhost:8080 (can be modified in makefile)
 
 #### Usage
 you may use postman, curl or whatever you want to send a post request to endpoint "verifypassword"
