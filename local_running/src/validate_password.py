@@ -17,4 +17,4 @@ class password_checker():
         return r"^(?=.*[a-z])(?=.*[A-Z])(?=.*[\d])(?=.*[!@#$%^&*()-+])(?!.*(.).*\1)[a-zA-Z\d!@#$%^&*()-+]{9,}$"
 
     def is_valid_password(self, password):
-        return self.password_checker.match(password) != None
+        return self.password_checker.match(str(password)) != None
