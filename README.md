@@ -73,6 +73,8 @@ This project runs on AWS as serverless using API Gateway as API and AWS Lambda.
 #### Quick run (all these command should to be runned in root directory of project (/password-checker/aws\_running//password\_verify\_app))
 - Install python dependences
 	- make init
+- build the project (should be executed before local api or deploy)
+	- sam build --use-container
 - run unit tests
 	- make unit-test
 - run integration tests (works only if deploy the code in you own AWS and change the stack variable on Makefile)
